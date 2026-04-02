@@ -90,6 +90,16 @@ h1 {
   gap: 8px;
 }
 
+@media (max-width: 480px) {
+  .input-row {
+    flex-direction: column;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+}
+
 .text-input {
   flex: 1;
   background: rgba(255, 255, 255, 0.08);
