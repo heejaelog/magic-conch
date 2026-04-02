@@ -109,8 +109,8 @@ export default function App() {
       <div className="container">
         <header className="header">
           <div className="conch-icon">🐚</div>
-          <h1>마법의 소라고동</h1>
-          <p className="subtitle">무엇이든 물어보세요. 소라고동이 결정해 드립니다.</p>
+          <h1>마법의 소라고둥</h1>
+          <p className="subtitle">무엇이든 물어보세요. 소라고둥이 결정해 드립니다.</p>
         </header>
 
         <div className="card input-card">
@@ -158,7 +158,7 @@ export default function App() {
             className={`conch-btn ${spinning ? 'spinning' : ''} ${options.length < 2 ? 'disabled' : ''}`}
             onClick={ask}
             disabled={options.length < 2 || spinning}
-            aria-label="소라고동에게 물어보기"
+            aria-label="소라고둥에게 물어보기"
           >
             <span className="conch-emoji">🐚</span>
             <span className="conch-label">{spinning ? '생각 중...' : '물어보기!'}</span>
@@ -168,7 +168,7 @@ export default function App() {
 
         {(spinning || result) && (
           <div className={`result-card ${showResult ? 'revealed' : ''}`}>
-            <div className="result-label">소라고동의 선택</div>
+            <div className="result-label">소라고둥의 선택</div>
             <div className={`result-text ${spinning ? 'flickering' : ''}`}>
               {displayText}
             </div>
